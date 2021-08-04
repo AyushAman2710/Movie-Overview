@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Movies Review-Website</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script
+    
+</head>
+<body>
+    <div class="hea">
+        <img src="images/9aed05fbe8434bfdb67543d0a3588844.png" class="center" >
+
+   
+    </div>
+    
+    
+    
+    
+    
+    <header>
+    
+    
+      
+
+      <form id="form">
+       
+          <input type="text" placeholder="Search movies" id="search" class="search">
+      </form>
+
+    </header>
+     <main id="main">
+         <div class="movie">
+             <img src="images/istockphoto.jpg" alt="images">
+            <div class="movie-info">
+                <h3>Movie Title</h3>
+                <span class="green">9.8</span>
+            </div>
+            <div class="overview">
+                <h3>Overview</h3>
+                loren ipson dolor,sit amet dnden,cdcdj
+                dcdnv.djkkbbjke vvdjbvdfe,ccdhh.
+                dfr vdvfdfb.fgrgffghgh
+            </div>
+
+         </div>
+
+     </main>
+    
+
+    <script>
+
+    paceOptions = {
+    ajax: true,
+    document: true,
+    eventLag: false
+    };
+
+    Pace.on('done', function() {
+    $('.p').delay(500).animate({top: '30%', opacity: '0'}, 3000, $.bez([0.19,1,0.22,1]));
+
+
+    $('#preloader').delay(1500).animate({top: '-100%'}, 2000, $.bez([0.19,1,0.22,1]));
+
+    TweenMax.from(".title", 2, {
+         delay: 1.8,
+              y: 10,
+              opacity: 0,
+              ease: Expo.easeInOut
+        })
+   });
+
+  </script>
+    <script src="main.js"></script>
+</body>
+</html>
